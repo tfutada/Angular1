@@ -1,4 +1,3 @@
-// Assign an anonymous function
 var logging = function() {
     console.log(location.hash); 
     

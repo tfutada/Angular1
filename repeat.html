@@ -13,17 +13,14 @@
 
     <!-- body -->
     <body ng-controller="mainController">
-        <p>{{username}}</p>
+
         <input type="search" placeholder="User name to find" ng-model="username" />
         <input type="submit" value="Find!" ng-click="search(username)" />
         
-        <div>{{user.name}}</div>
-        <div>{{user.email}}</div>
-        
         <table>
             <tr>
-                <th>Repo Name</th>
-                <th>Description</th>                
+                <th>Repository Names</th>
+                <th>Descriptions</th>                
             </tr>
             <tr ng-repeat="repo in repos">
                 <td>{{repo.name}}</td>

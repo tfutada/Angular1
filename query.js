@@ -7,8 +7,8 @@ app.controller('mainController', function($scope, $http)
         $scope.user = response.data;
     };
 
-    $scope.search = function(username) {
-        $http.get('https://api.github.com/users/' + username)
+    $scope.search = function() {
+        $http.get('https://api.github.com/users/' + $scope.username)
         .then(onComplete);
     };
     

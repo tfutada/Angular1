@@ -1,6 +1,6 @@
 
 var ajax = function(callback) {
-    callback("response!"); // usually async call.
+    callback("Response!"); // Usually this is an async call.
 };
 
 // Pass an anonymous function that takes an argument as a response.
@@ -10,6 +10,6 @@ ajax(function(response){
 
 // Usually, update UI fragment with the response.
 ajax(function(response){
-    document.getElementById("word").innerHTML = "Response!";
+    document.getElementById("word").innerHTML = response;
 });
 

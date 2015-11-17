@@ -1,6 +1,8 @@
 
 var ajax = function(callback) {
-    callback("Response!"); // Usually this is an async call.
+
+    var response = "Response!";
+    callback(response); 
 };
 
 // Pass an anonymous function that takes an argument as a response.

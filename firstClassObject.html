@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        Hello World!
+    </body>
+    <script>
+        console.log("Hello Angular");
+        
+        var func1 = function() {
+            console.log("i am func1");
+        }
+        func1();
+        var func2 = function(f) {
+          f();  
+        };
+        func2(func1);
+        var func3 = function() {
+            return func1;
+        }
+        func3()();
+    </script>
+</html>

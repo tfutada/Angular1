@@ -1,0 +1,21 @@
+{
+  "name": "Angular1",
+  "homepage": "https://github.com/tfutada/Angular1",
+  "authors": [
+    "taka <tafutada@pascaliaasia.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "onsenui": "2.0.0-beta"
+  }
+}

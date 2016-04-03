@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="bower_components/onsenui/js/onsenui.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/onsenui/js/angular-onsenui.js"></script>
+    <script src="onsen.js"></script>
+</head>
+<body>
+<ons-page ng-controller="MyCtrl">
+    <ons-toolbar>
+        <div class="center">Lazy Repeat</div>
+    </ons-toolbar>
+
+    <ons-list>
+        <ons-list-item ons-lazy-repeat="MyDelegate">
+            {{item.name}}
+        </ons-list-item>
+    </ons-list>
+</ons-page>
+</body>
+</html>

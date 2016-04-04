@@ -14,7 +14,7 @@ ons.bootstrap()
                 return 45;
             },
             countItems: function() {
-                return 10000000;
+                return 10000;
             },
             destroyItemScope: function(index, scope) {
                 console.log("Destroyed item #" + index);

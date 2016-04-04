@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        Hello World!
+    </body>
+    <script>
+        var car = function () {
+
+        };
+        car.prototype.foo = '123';
+
+        var c1 = new car();
+
+        console.log("c1.foo:" + c1.foo);
+
+        c1.foo = '456';
+        car.prototype.foo = 'abc';
+        console.log("c1.foo:" + c1.foo);
+
+        var c2 = new car();
+        console.log("c2.foo:" + c2.foo);
+
+
+    </script>
+</html>

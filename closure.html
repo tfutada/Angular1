@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        Hello World!
+    </body>
+    <script>
+
+        var foo = 'abc';
+
+        var f = function () {
+
+            var count = 0;
+            return function () {
+                count++;
+                return foo + ' ' + count;
+            }
+        };
+
+        var obj = f();
+
+        console.log('foo bar:' + obj() ); // abc 1
+        console.log('foo bar:' + obj() ); // abc 2
+
+        foo = 'def';
+        count = 0;
+
+        console.log('foo bar:' + obj() ); // def
+
+        var obj2 = f();
+        console.log('foo bar:' + obj2() ); //
+
+    </script>
+</html>

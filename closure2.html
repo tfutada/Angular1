@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        Hello World!
+    </body>
+    <script>
+
+        var foo = 'abc';
+
+        var f = function () {
+
+            var funcArray = [];
+
+            for (var i=0; i<5; i++) {
+
+//                (function(idx) {
+                    var idx = i;
+                    funcArray.push(function () {
+                        return foo + ' ' + idx;
+                    });
+//                })(i);
+
+            }
+
+            return funcArray;
+        };
+
+        var funcs = f();
+
+        for (var j=0; j<funcs.length; j++) {
+
+            console.log('funcs:' + funcs[j]());
+
+        }
+
+    </script>
+</html>

@@ -11,7 +11,7 @@
 
         var c1 = new car();
 
-        console.log("c1.foo:" + c1.foo);
+        console.log("c1.foo:" + c1.foo); // 123
 
         c1.foo = '456';
         car.prototype.foo = 'abc';
@@ -19,7 +19,7 @@
 
         var c2 = new car();
         console.log("c2.foo:" + c2.foo);
-
+        c2.foo = 'zzz';
 
     </script>
 </html>

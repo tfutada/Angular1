@@ -1,4 +1,4 @@
 #!/bin/sh
 
-echo 'Hello, World2' > log.txt
+echo 'Hello, World3' > /home/ec2-user/log.txt
 

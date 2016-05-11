@@ -1,4 +1,4 @@
 #!/bin/sh
 
-ls / > log.txt
+echo 'Hello, World' > log.txt
 

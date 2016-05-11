@@ -4,6 +4,6 @@ files:
    - source: /
      destination: /home/ec2-user
 hooks:
-   AfterInstall:
+   ApplicationStart:
      - location: run.sh
        timeout: 180
